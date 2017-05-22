@@ -1,0 +1,531 @@
+body {
+	font-family: 'Montserrat', arial;
+	font-size: 12px;
+}
+
+
+/*
+body {
+	font-family: 'Droid Serif', serif;
+	font-size: 12px;
+}
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-align: center;
+	color: #333333;
+	text-transform: uppercase;
+	font-family: 'Montserrat', arial;
+}
+
+h2 {
+	font-weight: bold;
+}
+
+h3 {
+	font-weight: bold;
+	text-transform: inherit;
+	margin-bottom: 20px;
+}
+
+
+/*container h5 dla podtytułów czyli tekstow pochyla czcionka*/
+
+.container h5 {
+	margin-top: 30px;
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 15px;
+	text-transform: capitalize;
+	font-weight: 100;
+	font-family: 'Droid Serif', serif;
+	font-style: italic;
+	color: #777777;
+	line-height: 25px;
+}
+
+.italic {
+	font-style: italic;
+	font-family: 'Droid Serif', serif;
+}
+
+section {
+	padding-bottom: 60px;
+}
+
+p {
+	font-weight: 300;
+	line-height: 25px;
+}
+
+section img{
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease; 
+	-o-transition: all 1s ease;
+}
+section img:hover {
+	-o-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-webkit-transition: all 0.6s;
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	cursor:pointer;
+}
+
+
+
+
+
+/*main nav start!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+#main-nav {
+	background-color: transparent;
+	border: 1px solid transparent;
+	transition: all 0.3s;
+	/*	transition generuje powolne, przyjemne dla oka przejscie pojawiania sie menu naw przy scrollowaniu*/
+}
+
+#main-nav ul li a {
+	color: #fff;
+	padding: 15px 15px;
+	top: 10px;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease; 
+	-o-transition: all 1s ease;
+}
+
+#main-nav ul li a:hover {
+	text-shadow: 7px 7px 7px #aaa;
+	color: #0ed8d6;
+	-o-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-webkit-transition: all 0.6s;
+	-moz-transform: scale(1.3);
+	-o-transform: scale(1.3);
+	-webkit-transform: scale(1.3);
+	cursor:pointer;
+}
+
+
+#main-nav.scroll  {
+	background-color: #fff;
+}
+
+#main-nav.scroll ul li  a {
+	color: #0ed8d6;
+}
+
+
+/*Main menu styles stop*/
+
+
+/* Header styles*/
+
+#main-header {
+	font-family: 'Montserrat', arial;
+	background-image: url(../img/header/pictures_on_the_wall.jpg);
+	background-size: cover;
+	/*	cover - pokrywa całą wysokość i szerokość kontenera */
+	background-position: center;
+	/*	jest wycentrowane żeby przez cover nie uciąć gdzieś */
+	background-repeat: no-repeat;
+	color: #fff;
+	height: 100vh;
+	max-height: 800px;
+	position: relative;
+}
+
+#main-header .main-header-content {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	/*	w pionie 50% , przesuwam w dóło 50% i ustawiam w poziomie left 0 right 0 o margin 0 i jest wycentrowane*/
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	/*	padding: 30vh;*/
+	/*	rozpycham jednostkami relatywnymi żeby mi się ten obrazek skalował */
+}
+
+#main-header .main-header-content h1 {
+	color: #fff;
+	font-size: 2em;
+	font-weight: 100;
+	text-transform: none;
+}
+
+#main-header .main-header-content h2 {
+	color: #fff;
+	font-size: 4em;
+	font-weight: 200;
+}
+
+#submit {
+	text-align: center;
+	background-color: #0ed8d6;
+	border: #0ed8d6;
+	width: auto;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 600;
+	font-family: 'Montserrat', arial;
+}
+
+#submit:hover {
+	text-shadow: 7px 7px 7px #aaa;
+	border: #0ed8d6;
+	font-size: 15px;
+}
+
+
+/* Header styles stop*/
+
+
+/*section sservice start */
+
+#service > p {
+	text-align: center;
+}
+
+#service div#service-icons figure {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#service #service-icons figure img {
+	margin-top: 25px;
+	margin-bottom: 35px;
+}
+
+
+/*
+#service #service-icons h3 {
+	font-weight: 300; 
+	text-transform:inherit;
+	margin-bottom: 20px;
+}
+*/
+
+
+/*section servicestop */
+
+
+/*	************************ Section about portfolio start *****************************/
+
+#portfolio {
+	background-color: #f7f7f7;
+}
+
+#portfolio #portfolio-images .actual-portfolio-image .portfolio-image{
+	max-width: 100%;
+	height: 350px;
+	/*	float: left;*/
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 30%;
+}
+
+#portfolio #portfolio-images .actual-portfolio-image [id="image-1"] {
+	
+	background-image: url("../img/portfolio/chestnut_on_bracket.jpg");
+/*
+	height: 350px;
+	max-width: 100%;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+*/
+}
+
+#portfolio #portfolio-images .actual-portfolio-image [id="image-2"] {
+	background-image: url("../img/portfolio/typing_on_laptop.jpg");
+}
+
+#portfolio #portfolio-images .actual-portfolio-image [id="image-3"] {
+	background-image: url("../img/portfolio/child_with_blue_paint.jpg");
+}
+
+#portfolio #portfolio-images .actual-portfolio-image [id="image-4"] {
+	background-image: url("../img/portfolio/chaotic_paint.jpg");
+}
+
+#portfolio #portfolio-images .actual-portfolio-image [id="image-5"] {
+	background-image: url("../img/portfolio/house_with_blue_doors.jpg");
+}
+
+#portfolio #portfolio-images .actual-portfolio-image [id="image-6"] {
+	background-image: url("../img/portfolio/box_of_cookies.jpg");
+}
+
+
+#portfolio #portfolio-images .actual-portfolio-image .actual-portfolio-image-mask {
+	background-color: rgba(14, 216, 214, 0.6);
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	color: white;
+	transition: all 0.5s linear;
+}
+
+#portfolio #portfolio-images .actual-portfolio-image .actual-portfolio-image-mask:hover {
+	opacity: 1;
+}
+
+#portfolio #portfolio-images .actual-portfolio-image .actual-portfolio-image-mask a {
+	position: absolute;
+	transform: translateY(-50%);
+	font-size: initial;
+	text-align: center;
+	color: #fff;
+	top: 45%;
+	padding: 5px;
+	left: 0;
+	right: 0;
+}
+
+#portfolio #portfolio-images .actual-portfolio-image .figure-caption {
+	position: absolute;
+	transform: translateY(170%);
+	text-align:center;
+	vertical-align:50px;
+	padding: 7%;
+	left: 0;
+	right: 0;
+	background-color: white;
+}
+
+#portfolio #portfolio-images .actual-portfolio-image .figure-caption h3 {
+	font-size: 20px;
+	margin-bottom: -10px;
+}
+
+
+/*	************************ Section about portfolio stop *****************************/
+
+
+/*	************************ Section team start *****************************/
+
+#team div#team-icons figure {
+	text-align: center;
+	/*	margin-bottom: 20px;*/
+}
+
+
+/* upewniam sie ze obraz nie jest za duzy */
+
+#team #team-icons figure img {
+	max-width: 100%;
+	height: 250px;
+}
+
+#team #team-icons figure .skills-content h5 {
+	font-style: normal;
+	margin-top: -10px;
+}
+
+#team #team-icons figure .skills-content a {
+	text-decoration: none;
+	color: #222222;
+	margin-top: -30px;
+	/*	padding: 20px;*/
+}
+#team #team-icons figure .skills-content a #ten {
+	color: #0ed8d6;
+}
+
+#team #team-icons figure .skills-content a:hover {
+	color: #0ed8d6;
+}
+
+#team .container #notes {
+	font-style: normal;
+}
+
+
+/*	************************ Section team stop *****************************/
+
+
+/*	************************ Section about contact start *****************************/
+
+#contact {
+	background-image: url(../img/footer/world-map.jpg);
+	background-size: cover;
+	/*	cover - pokrywa całą wysokość i szerokość kontenera */
+	background-position: center;
+	/*	jest wycentrowane żeby przez cover nie uciąć gdzieś */
+	background-repeat: space;
+	color: #fff;
+	height: 100vh;
+	max-height: 800px;
+	position: relative;
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+#contact {
+	-webkit-transition:
+	all 1s ease; -moz-transition:
+	all 1s ease; -o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+#contact:hover {
+	-webkit-filter:
+	grayscale(100%); 
+	cursor:pointer;
+}
+
+#contact #contact-content {
+	position: absolute;
+	text-align: center;
+	left: 0;
+	right: 0;
+	margin-top: 70px;
+}
+
+#contact #contact-content h2 {
+	color: #fff;
+	font-size: 4em;
+	font-weight: 200;
+}
+
+#contact #contact-content h5 {
+	color: #fff;
+	font-size: 2em;
+	font-weight: 100;
+	text-transform: none;
+}
+
+label {
+	display: none;
+}
+
+#contact .contact-info {
+	width: 50%;
+	margin: 0;
+	margin-top: 50px;
+	float: left;
+	text-align: left;
+	text-decoration: none;
+	font-weight: 300;
+	line-height: 25px;
+	overflow: hidden;
+	margin-left: 10px;
+	padding-bottom: 10px;
+}
+
+#contact .contact-info .form-group {
+	width: 90%;
+	padding: 5px;
+}
+
+#contact .message {
+	width: 50%;
+	display: inline-block;
+}
+
+#contact .message .form-control {
+	vertical-align: bottom;
+	display: block;
+	margin-left: 10px;
+	width: 80%;
+	margin-top: 55px;
+}
+
+#contact button {
+	margin-left: -55%;
+	margin-top: 10px;
+}
+
+
+/*	************************ Section about contact stop *****************************/
+
+
+/*	************************ Section footer start *****************************/
+
+
+.copyright {
+	min-height: 40px;
+	background-color: #fff;
+}
+
+.copyright p {
+	text-align: left;
+	color: #000;
+	padding: 10px 0;
+	margin-bottom: 0px;
+}
+
+.heading7 {
+	font-size: 21px;
+	font-weight: 700;
+	color: #777777;
+	margin-bottom: 22px;
+}
+
+.post p {
+	font-size: 12px;
+	color: #000;
+	line-height: 20px;
+}
+
+.post p span {
+	display: block;
+	color: #777777;
+}
+
+.bottom_ul {
+	list-style-type: none;
+	float: right;
+	margin-bottom: 0px;
+}
+
+.bottom_ul li {
+	float: left;
+	line-height: 40px;
+}
+
+.bottom_ul li:after {
+	content: "";
+	color: #000;
+	margin-right: 8px;
+	margin-left: 8px;
+}
+
+.bottom_ul li a {
+	color: #000;
+	font-size: 12px;
+}
+
+.media{
+	position: absolute;
+	width: 80%;
+	text-align: center;
+
+}
+
+.media a {
+	text-decoration: none;
+	color: #222222;
+	margin-top: -30px;
+	/*	padding: 20px;*/
+}
+.media a #ten {
+	color: #0ed8d6;
+}
+
+.media a:hover {
+	color: #0ed8d6;
+}
+
+/*	************************ Section footer stop *****************************/

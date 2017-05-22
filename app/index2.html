@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Projekt Bootstrap</title>
+	
+<!-- Monsterrat Styles -->
+	 <link href="http://pl.allfont.net/allfont.css?fonts=montserrat" rel="stylesheet" type="text/css" />
+<!--
+	 font-family: 'Montserrat', arial;
+	font-size: 48px;
+	text-shadow: 4px 4px 4px #aaa;
+-->
+	 
+<!-- google fonts styles-->	 
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Roboto+Slab:100,300,400,700" rel="stylesheet">
+<!--
+    font-family: 'Droid Serif', serif;
+	font-family: 'Roboto Slab', serif;
+	    
+-->
+<!--  Skrypt bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">			
+				
+<!-- Font Awesome Styles -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!--   MENU NAWIGACYJNE -->
+
+	  <nav class="navbar navbar-default navbar-fixed-top" id="main-nav">
+		  <div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-bar-collapse" aria-expanded="false">
+					<span class="sr-only">Menu</span>
+					<span class="toggle">Menu</span>
+
+					<span id="drop"></span>
+			 <!--     <span class="icon-bar"></span>
+			-->
+				  </button>
+				  <a class="navbar-brand" href="#"></a>
+			<!--      <a class="navbar-brand" href="#">MENU</a>-->
+				</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="nav-bar-collapse">
+				 <ul class="nav navbar-nav navbar-right text-right">
+					<li class="menu-item"><a href="#service"> SERVICES </a></li>
+			<!--		wrzucam kotwice czyli hashtag i nazwa id-->
+					<li class="menu-item"><a href="#portfolio"> PORTFOLIO </a></li>
+					<li class="menu-item"><a href="#main-header"> ABOUT </a></li>
+					<li class="menu-item"><a href="#team"> TEAM </a></li>
+
+					<li class="menu-item"><a href="#contact"> CONTACT </a></li>
+				 </ul>
+
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+   
+<!--   KONIEC MENU NAWIGACYJNEGO -->
+
+<header id="main-header"> 
+	<div class="main-header-content">
+		<h1 class="italic"> Nam libero tempore, cum soluta </h1>
+		<h2> Lorem ipsum dolor</h2> <br /> <br /> 
+		<button type="button" id="submit" class="btn btn-info">view more</button>
+	</div>		
+</header>
+
+<!--section services start-->
+<section id="service">
+	<div class="container">
+		<div class="row">
+			<h2> Services </h2>
+			<h5 class="italic"> Pariatur odit libero sapiente sequi </h5>
+	
+		</div>
+			<div id="service-icons" class="row">
+				<figure class="col-md-4 col-sm-12"> 
+					<img src="icons/iconmonstr-briefcase-16-120.png" alt="webDevelopment">
+					<h3> Web Development </h3>
+					<article class="service-content text-center">
+					<p> Praesentium, nisi laboriosam fugiat consequatur expedita quasi corporis, modi, quas commodi iusto quia illo dicta placeat doloribus veritatis perferendis ex ipsa laborum. 
+					</p>
+					</article>
+				</figure>
+				<figure class="col-md-4 col-sm-12">
+					<img src="icons/iconmonstr-cloud-30-120.png" alt="ecommerce">
+					<h3> E-Commerce</h3>
+					<article class="service-content text-center">
+					<p> Praesentium, nisi laboriosam fugiat consequatur expedita quasi corporis, modi, quas commodi iusto quia illo dicta placeat doloribus veritatis perferendis ex ipsa laborum. 
+					</p>
+					</article>
+				</figure >
+				<figure class="col-md-4 col-sm-12">
+					<img src="icons/iconmonstr-speech-bubble-2-120.png" alt="webDesign">
+					<h3>Web Design</h3>
+					<article class="service-content text-center">
+					<p> Praesentium, nisi laboriosam fugiat consequatur expedita quasi corporis, modi, quas commodi iusto quia illo dicta placeat doloribus veritatis perferendis ex ipsa laborum. 
+					</p>
+					</article>
+				</figure>
+			</div>
+		</div>
+</section>
+<!--section  services stop-->
+
+<!--section porfolio start-->
+<section id="portfolio">
+	<div class="container">
+		<div class="row">
+			<h2> Portfolio </h2>
+			<h5 class="italic"> Pariatur odit libero sapiente sequi </h5>
+	
+		</div>
+		
+		<div id="portfolio-images" class="row top-buffer">
+		 	<figure id="image-1" class="actual-portfolio-image col-md-4 col-sm-12">
+				<div class="actual-portfolio-image-mask">
+					<a href=""> <i class="fa fa-plus fa-5x"></i></a>	 
+				</div>
+				<figcaption class="figure-caption">
+					<h3> Earum Rerum Hic </h3>
+						<h5>Temporibum Autem Quibusdam</h5> 	
+				</figcaption>
+			</figure>
+			
+
+			<figure id="image-2" class="actual-portfolio-image col-md-4 col-sm-12">
+				<div class="actual-portfolio-image-mask">
+					<a href=""> <i class="fa fa-plus fa-5x"></i></a> 
+				</div> 
+				<figcaption class="figure-caption">
+					<h3> Earum Rerum Hic </h3>
+						<h5>Temporibum Autem Quibusdam</h5> 
+				</figcaption>
+			</figure>
+
+			<figure id="image-3" class="actual-portfolio-image col-md-4 col-sm-12">
+				<div class="actual-portfolio-image-mask">
+					<a href=""> <i class="fa fa-plus fa-5x"></i></a> 
+				</div> 
+				<figcaption class="figure-caption">
+					<h3> Earum Rerum Hic </h3>
+						<h5>Temporibum Autem Quibusdam</h5>  
+				</figcaption>
+			</figure>
+			
+			<figure id="image-4" class="actual-portfolio-image col-md-4 col-sm-12">
+				<div class="actual-portfolio-image-mask">
+					<a href=""> <i class="fa fa-plus fa-5x"></i></a> 
+				</div> 
+				<figcaption class="figure-caption">
+					<h3> Earum Rerum Hic </h3>
+						<h5>Temporibum Autem Quibusdam</h5> 
+				</figcaption>
+			</figure>
+			
+			<figure id="image-5" class="actual-portfolio-image col-md-4 col-sm-12">
+				<div class="actual-portfolio-image-mask">
+					<a href=""> <i class="fa fa-plus fa-5x"></i></a> 
+				</div> 
+				<figcaption class="figure-caption">
+					<h3> Earum Rerum Hic </h3>
+						<h5>Temporibum Autem Quibusdam</h5> 
+				</figcaption>
+			</figure>
+			
+			<figure id="image-6" class="actual-portfolio-image col-md-4 col-sm-12">
+				<div class="actual-portfolio-image-mask">
+					<a href=""> <i class="fa fa-plus fa-5x"></i></a> 
+				</div> 
+				<figcaption class="figure-caption">
+					<h3> Earum Rerum Hic </h3>
+						<h5>Temporibum Autem Quibusdam</h5>  
+				</figcaption>
+			</figure>
+		</div>
+	</div>
+	
+</section>
+
+<!--section portfolio stop-->
+
+<!--section team start-->
+<section id="team">
+	<div class="container">
+		<div class="row">
+			<h2> Team </h2>
+			<h5 class="italic"> Pariatur odit libero sapiente sequi </h5>
+	
+		</div>
+			<div id="team-icons" class="row">
+				<figure class="team-member  col-md-4 col-sm-12"> 
+					<img src="img/team/man-1.jpg" alt="man1" class="img-circle">
+					<h3> Eric Stern </h3>
+					<article class="skills-content text-center">
+					<h5> Account Manager
+					</h5>
+					<span class="fa-stack fa-lg">
+  						<i class="fa fa-circle fa-stack-2x fa-align-left"></i>
+  						<i class="fa fa-facebook fa-stack-1x fa-inverse fa-align-left"></i>
+  					</span>
+  					<span class="fa-stack fa-lg">
+  						<i class="fa fa-circle fa-stack-2x fa-align-center"></i>
+  						<i class="fa fa-twitter fa-stack-1x fa-inverse fa-align-cente"></i>
+  					</span>
+  					<span class="fa-stack fa-lg">
+  						<i class="fa fa-circle fa-stack-2x fa-align-right"></i>
+  						<i class="fa fa-linkedin fa-stack-1x fa-inverse fa-align-right"></i>
+					</span>
+					</article>
+				</figure>
+				<figure class="team-member col-md-4 col-sm-12">
+					<img src="img/team/man-2.jpg" alt="man2" class="img-circle">
+					<h3> Martin Muller</h3>
+					<article class="skills-content text-center">
+					<h5> Developer
+					</h5>
+					<span class="fa-stack fa-lg">
+  						<i class="fa fa-circle fa-stack-2x fa-align-left"></i>
+  						<i class="fa fa-facebook fa-stack-1x fa-inverse fa-align-left"></i>
+  					</span>
+  					<span class="fa-stack fa-lg">
+  						<i class="fa fa-circle fa-stack-2x fa-align-center"></i>
+  						<i class="fa fa-twitter fa-stack-1x fa-inverse fa-align-cente"></i>
+  					</span>
+  					<span class="fa-stack fa-lg">
+  						<i class="fa fa-circle fa-stack-2x fa-align-right"></i>
+  						<i class="fa fa-linkedin fa-stack-1x fa-inverse fa-align-right"></i>
+					</span>
+					</article>
+				</figure >
+				<figure class="team-member col-md-4 col-sm-12">
+					<img src="img/team/woman-1.jpg" alt="woman" class="img-circle">
+					<h3>Anna Smith</h3>
+					<article class="skills-content text-center">
+					<h5> Project Manager 
+					</h5>
+					<span class="fa-stack fa-lg">
+ 						<a href="https://www.facebook.com/kasia.zajac.739">
+  						<i class="fa fa-circle fa-stack-2x fa-align-left"></i>
+  						<i class="fa fa-facebook fa-stack-1x fa-inverse fa-align-left"></i>
+						</a>
+  					</span>
+  					<span class="fa-stack fa-lg">
+  						<i class="fa fa-circle fa-stack-2x fa-align-center"></i>
+  						<i class="fa fa-twitter fa-stack-1x fa-inverse fa-align-cente"></i>
+  					</span>
+  					<span class="fa-stack fa-lg">
+  						<i class="fa fa-circle fa-stack-2x fa-align-right"></i>
+  						<i class="fa fa-linkedin fa-stack-1x fa-inverse fa-align-right"></i>
+					</span>
+					</article>
+				</figure>
+			</div>
+	</div>
+	<div class="container" >
+		<div class="row">
+			<h5 id="notes">Praesentium, nisi laboriosam fugiat consequatur expedita quasi corporis, modi, quas commodi iusto quia illo dicta placeat doloribus veritatis perferendis ex ipsa laborum. Praesentium, nisi laboriosam fugiat consequatur expedita quasi corporis, modi, quas commodi iusto quia illo dicta placeat doloribus veritatis perferendis ex ipsa laborum. </h5>
+		</div>
+	</div>
+	
+</section>
+	
+<!--section team stop-->
+
+
+<!--!!!!!!!!!!!!!! section contact start-->
+<section id="contact">
+	
+	<div class="container" id="contact-content">
+		<div class="row">
+			<h2> Contact us </h2>
+			<h5 class="italic"> Pariatur odit libero sapiente sequi </h5>
+	
+		</div>
+	
+
+			<div class="contact-info row">
+				<form>
+				  <div class="form-group">
+					<label for="exampleInputName"></label>
+					<input type="text" class="form-control" id="exampleInputName" placeholder="YOUR NAME *">
+				  </div>
+				  <div class="form-group">
+					<label for="exampleInputEmail1"></label>
+					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="YOUR EMAIL *">
+				  </div>
+				  <div class="form-group">
+					<label for="exampleInputTel"></label>
+					<input type="tel" class="form-control" id="exampleInputTel" placeholder="YOUR PHONE *">
+				  </div>
+				  <button type="submit" class="btn btn-default">Submit</button>
+				</form>
+
+			</div>
+
+		<div class="message row">
+                  <div class="temp">
+                        <div class="form-group">
+                            <label for="name"></label>
+                            <textarea name="message" id="message" class="form-control" rows="8" cols="25" required="required"
+                                placeholder="YOUR MESSAGE*"></textarea>
+                        </div>
+                    </div>
+				
+				<button type="button" id="submit" class="btn btn-success">Wyslij</button>
+
+<!--				<input type="submit" id="submit"  value="Wyślij">-->
+			
+		</div>
+		
+		<button type="button" id="submit" class="btn btn-info">view more</button>
+	</div>
+</section>
+
+
+<!--!!!!!!!!!!!!!! section contact stop-->
+
+<script src="js/customer.js"></script>
+</body>
+</html>

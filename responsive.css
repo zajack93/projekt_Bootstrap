@@ -1,0 +1,69 @@
+@media all and (max-width: 768px) {
+	
+	#main-nav  {
+		background-color: #fff;
+		color:  #0ed8d6;
+	}
+
+	#main-nav ul li  a {
+		color: #0ed8d6;
+		-webkit-transition: all 1s ease;
+		-moz-transition: all 1s ease; 
+		-o-transition: all 1s ease;
+	}
+
+	#main-nav ul li a:hover {
+		-o-transition: all 0.6s;
+		-moz-transition: all 0.6s;
+		-webkit-transition: all 0.6s;
+		-moz-transform: scale(1.0);
+		-o-transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+		
+	} 
+
+/*	**************** Header style responsive start *************/
+	#main-header .main-header-content {
+		text-align: center;
+		padding: 30%;
+	/*	rozpycham jednostkami relatywnymi żeby mi się ten obrazek skalował */
+	}
+	
+	#main-header .main-header-content h2 {
+		font-size: 3.5em;
+
+	}
+
+	#main-header .main-header-content h1 {
+		font-size: 1.5em;
+	}
+	/*	**************** Header style responsive stop *************/
+	
+	/*	**************** Section portfolio responsive start *************/
+		#portfolio > figure  {
+	/*		inherit = domyslna */
+			width: 100%;
+		/*	obrazek jako wlasciwosc liniowa dodajemy text-align:centre, jezeli byloby obrazek obeazek, to*/
+		}
+		#portfolio > figure .actual-portfolio-image {
+/*			max-height: inherit;*/
+			width: 100%;
+			margin-left: 0px;
+			margin-right: 0px;
+			margin-bottom: 0%;
+		}
+		#portfolio > .figure-caption {
+			width: 50%;
+		}
+
+/*	**************** Section portfolio responsive stop *************************************/
+	
+	section {
+		padding: 0 40px 50px;
+	}
+	
+	
+	/*	************************ Section about contact stop *****************************/
+	
+	
+}
